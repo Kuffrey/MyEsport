@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Website</title>
+    <link rel="stylesheet" href="styless.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">It's Just a Game</a>
+      <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#games">Games</a></li>
+        <li><a href="#tournaments">Tournaments</a></li>
+        <li><a href="#contact">Contact</a></li>
+        
+      </ul>
+      
+    <div class="toggleMenu" onclick="toggleMenu();"></div>
+    </header>
+
+    <!-- Home Banner -->
+    <div class="banner" id="home">
+        <div class="bg">
+            <div class="content">
+                <h2>A New Home for <br>
+                Game Lovers</h2>
+                <p>It's not about how good you are, it's about how good you want to be.</p>
+                <a href="https://play.toornament.com/en_US/login/#registered" class="btn">Join Now</a>
+                 
+            </div>
+            <img src="Omen.png" class="img">
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="about" id="about">
+        <div class="contentBx"> 
+        <h2>About us</h2>
+        <p>Welcome to IJG, your ultimate destination for all things esports! 
+            We are a passionate and dedicated team of gaming enthusiasts who have come together to provide you with the latest news, 
+            insights, and thrilling content from the world of competitive gaming. At IJG, we understand that esports is 
+            more than just a hobby; it's a global phenomenon that brings together millions of players and fans from around the world. 
+        </p>
+        <a href="Read.html">Read more</a>
+        </div>
+        <img src="contr.png" class="img">
+    </div>
+
+    <div class="games" id="games">
+        <h2>Popular Games</h2>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <ul>
+            <li class="list active" data-filter="all">ALL</li>
+            <li class="list" data-filter="pc">Pc games</li>
+            <li class="list" data-filter="console">Console games</li>
+        </ul>
+        <div class="cardBx">
+            <div class="card" data-item="pc">
+                <img src="1stGame.jpg">
+                <div class="content">
+                    <h4>Valorant</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>Free</span></p>
+                        <a href="https://playvalorant.com/en-sg/">Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="console">
+                <img src="9thGame.jpg">
+                <div class="content">
+                    <h4>Marvel's Spiderman</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>$49.99</span></p>
+                        <a href="https://store.playstation.com/en-us/product/UP9000-CUSA02299_00-MARVELSSPIDERMAN">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" data-item="console">
+                <img src="8thGame.jpg">
+                <div class="content">
+                    <h4>Devil May Cry 5</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>$29.99</span></p>
+                        <a href="https://store.steampowered.com/app/601150/Devil_May_Cry_5/">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="pc">
+                <img src="4thGame.jpg">
+                <div class="content">
+                    <h4>Red Dead Redemption 2</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>$59.99</span></p>
+                        <a href="https://www.rockstargames.com/games/reddeadredemption">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="pc">
+                <img src="5thGame.jpg">
+                <div class="content">
+                    <h4>Elden Ring</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>$59.99</span></p>
+                        <a href="https://store.steampowered.com/app/1245620/ELDEN_RING/">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="pc">
+                <img src="6thGame.jpg">
+                <div class="content">
+                    <h4>Minecraft</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>$39.99</span></p>
+                        <a href="https://www.minecraft.net/en-us/store/minecraft-java-bedrock-edition-pc">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="console">
+                <img src="7thGame.jpg">
+                <div class="content">
+                    <h4>God of War: Ragnarok</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>$49</span></p>
+                        <a href="https://www.playstation.com/en-ph/games/god-of-war-ragnarok/">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="pc">
+                <img src="3rdGame.jpg">
+                <div class="content">
+                    <h4>Overwatch</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>Free</span></p>
+                        <a href="https://overwatch.blizzard.com/en-us/">Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="pc">
+                <img src="2ndGame.jpg">
+                <div class="content">
+                    <h4>League of Legends</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>Free</span></p>
+                        <a href="https://signup.leagueoflegends.com/en-ph/signup/redownload">Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Tournaments -->
+    <div class="tournaments" id="tournaments">
+        <h2>Live Tournaments</h2>
+        <div class="boxBx">
+            <div class="box">
+                <img src="Valorantss.jpg">
+                <div class="content">
+                    <h4><span>3</span> Matches in progress..</h4>
+                    <p>Valorant</p>
+                    <p>The Valorant Champions Tour (VCT) is a global competitive esports tournament 
+                        series for the video game Valorant organised by Riot Games, the game's developers.</p>
+                    <div class="btn">
+                        <a href="https://escharts.com/tournaments/valorant/vct-2023-pacific-league" class="watch">Watch</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="LOL.jpg">
+                <div class="content">
+                    <h4><span>5</span> Matches in progress..</h4>
+                    <p>League of Legends</p>
+                    <p>The League Championship Series (LCS) is the top level of professional League of Legends in the 
+                        United States and Canada. The esports league is run by Riot Games and has ten franchise teams.</p>
+                    <div class="btn">
+                        <a href="https://escharts.com/tournaments/lol/mid-season-invitational-2023" class="watch">Watch</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="owats.jpg">
+                <div class="content">
+                    <h4><span>2</span> Matches in progress..</h4>
+                    <p>Overwatch 2</p>
+                    <p>Overwatch League (OWL) is the premier professional esports league for Overwatch, 
+                        organized by Blizzard Entertainment. The league is touted as the first featuring franchised teams 
+                        representing cities across North America, Europe, and Asia.</p>
+                    <div class="btn">
+                        <a href="https://www.youtube.com/watch?v=1n3rioV5cak" class="watch">Watch</a>
+
+                    </div>
+                </div>
+            </div>
+<!-- Contact -->
+
+            <div class="contact" id="contact">
+                <img src="dev.jpg">
+            </div>
+
+
+
+
+
+            <!-- Footer -->
+            <footer>
+                <div class="info">
+                    <p><i class='bx bxs-copyright'></i>2023 All Rights Reserved&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;CONTACT ME</p>
+                    <ul>
+                        <li><a href="https://www.facebook.com/kurtgeoffrey.aquino.9"><i class='bx bxl-facebook'></i></a></li>
+                    </ul>
+                </div> 
+            </footer>
+        </div>
+    </div>
+    <script>
+        /* Sticky NavBar */
+        window.addEventListener('scroll',function()
+        {
+            var header =document.querySelector('header');
+            header.classList.toggle('sticky',window.scrollY>0);
+        });
+        /* Reponsive NavBar */
+        function  toggleMenu(){
+            const toggleMenu = document.querySelector('toggleMenu');
+            const nav = document.querySelectorAll('.nav');
+            toggleMenu.classList.toggle('active')
+            nav.classList.toggle('active')
+        }
+
+        /* Filterable Cards */
+
+        let list = document.querySelectorAll('.list');
+        let card = document.querySelectorAll('.card');
+
+        for(let i=0; i<list.length; i++){
+            list[i].addEventListener('click',function(){
+                for(let j=0; j<list.length; j++){
+                   list[j].classList.remove('active');
+                }
+                this.classList.add('active');
+
+                let dataFilter = this.getAttribute('data-filter');
+
+                for(let k=0; k<card.length; k++)
+                {
+                    card[k].classList.remove('active');
+                    card[k].classList.add('hide');
+
+                    if (card[k].getAttribute('data-item') == dataFilter || dataFilter == 'all'){
+                    card[k].classList.remove('hide');
+                    card[k].classList.add('active');
+                    }
+                }
+        })
+        
+    }
+
+
+   
+            
+    </script>
+  </body>
+</html>
